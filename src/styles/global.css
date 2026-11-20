@@ -75,7 +75,7 @@ html.dark {
 }
 .dark .menu {
   background-color: #fff;
-  color:#0d0950;
+  color:#000;
 }
 .dark .nav-links a:hover,
 .dark .nav-links a:focus {
