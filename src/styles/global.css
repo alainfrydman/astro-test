@@ -51,7 +51,7 @@ h1 {
 :has(.menu[aria-expanded="true"]) .nav-links {
   display:unset;
 }
-/* for small screen */
+/* for larger screen */
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
@@ -67,6 +67,25 @@ h1 {
   .menu {
     display: none;
   }  
+}
+/* pour dark screen */
+html.dark {
+  background-color: #0d0950;
+  color:#fff;
+}
+.dark .menu {
+  background-color: #fff;
+  color:#0d0950;
+}
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  color:#0d0950;
+}
+.dark .nav-links a {
+  color:#fff;
+}
+.dark a {
+  color:#ff9776;
 }
 
 
