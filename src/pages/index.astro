@@ -1,8 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
 const pageTitle = "Home Page";
 ---
 <BaseLayout pageTitle={pageTitle}>
+	<div>le slot commence ici</div>
 	<h2>H2 Dans le slot !</h2>
 	<p>ça fait partie du slot :-D <br />déclaré dans le BaseLayout.astro</p>
+	<div>Le greeting javascript importé commence ici</div>
+	<!-- <Greeting messages = {["Hi","Hello","Howdy", "Hey there"]} /> --> 
+	<Greeting client:load messages = {["Heij", "Hallo", "Hola", "hyhy"]} />
+	<div>fin du greeting</div>
+	<div>fin du slot</div>
 </BaseLayout>
